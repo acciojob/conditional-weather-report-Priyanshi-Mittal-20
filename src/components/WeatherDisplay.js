@@ -4,7 +4,8 @@ const WeatherDisplay = ({data}) => {
   return (
     <div>
       <span
-        style={{
+        style={
+          {
           color: data.temperature > 20 ? "red" : "blue"
         }}
       >
