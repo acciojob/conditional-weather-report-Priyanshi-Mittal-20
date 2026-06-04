@@ -5,7 +5,7 @@ import WeatherDisplay from "./WeatherDisplay";
 import { useState } from "react";
 
 const App = () => {
-  const [data,setData]=useState({ temperature: 15, conditions: "Sunny" })
+  const [data,setData]=useState({ temperature: 25, conditions: "Sunny" })
   return (
     <div>
         <WeatherDisplay data={data} />
