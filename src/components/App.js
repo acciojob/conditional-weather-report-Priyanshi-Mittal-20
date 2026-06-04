@@ -1,11 +1,14 @@
 
 import React from "react";
 import './../styles/App.css';
+import WeatherDisplay from "./WeatherDisplay";
+import { useState } from "react";
 
 const App = () => {
+  const [data,setData]=useState({ temperature: 15, conditions: "Sunny" })
   return (
     <div>
-        {/* Do not remove the main div */}
+        <WeatherDisplay data={data} />
     </div>
   )
 }
